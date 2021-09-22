@@ -1,0 +1,122 @@
+* {
+   box-sizing: border-box;
+ }
+
+ .hero-image {
+   background-image: url("https://yuc-se.gumlet.net/wp-content/uploads/dsc06551.jpg"); /* The image used */
+   background-color:teal; /* Used if the image is unavailable */
+   height: auto; /* You must set a specified height */
+   background-position: center; /* Center the image */
+   background-repeat: no-repeat; /* Do not repeat the image */
+   background-size: cover; /* Resize the background image to cover the entire container */
+ }
+
+ body {
+   background-color: teal;
+   margin: 0%;
+}
+ 
+img {
+   width: 10em;
+   height: 5em;
+}
+ 
+ 
+ .flex-container1 {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   background-color:#F0669E;
+   align-items: center;
+   justify-content: center;
+   padding-top: 2em;
+   padding-bottom: 2em;
+   margin-bottom: 3em;
+}
+ 
+ .flex-container2 {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   background-color:#F3F3F3;
+   text-align: center;
+   margin:auto;
+   padding: 10px;
+   width: 60%;
+   align-items: center;
+   justify-content: center;
+   border-radius: 13px;
+ }
+ 
+ .flex-container3 {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   background-color: #F3F3F3;
+   padding: 10px;
+   text-align: center;
+   margin-top: 20px;
+   align-items: center;
+   justify-content: center;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+ }
+ 
+
+h1{
+   font-family:Arial, Helvetica, sans-serif;
+}
+ 
+h3 {
+   font-family: Arial, Helvetica, sans-serif ;
+   font-size: 14px;
+}
+ 
+p {
+   font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+color: black;
+}
+ 
+.buttonMeny {
+   background-color: black;
+   font-family:Arial, Helvetica, sans-serif;
+   border: none;
+   color: white;
+   padding: 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 1em;
+   margin: 10px;
+   cursor: pointer;
+   border-radius: 11px;
+   width: 150px;
+ }
+
+
+.buttonMeny:hover {
+   background-color:rgb(46, 45, 45)
+}
+
+ .buttonBoka {
+   background-color: #F0669E;
+   border: none;
+   color: white;
+   padding: 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 1em;
+   margin: 10%;
+   cursor: pointer;
+   border-radius: 11px;
+   width: 150px;
+ }
+
+ .buttonBoka:hover {
+   background-color:#bb567e;
+}

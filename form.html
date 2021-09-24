@@ -2,25 +2,34 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YUC</title>
     <link href="stylesheet.css" rel="stylesheet">
 </head>
-<body>
+  
+<body class="hero-image2">
+  <header class="flex-container1">
+    <a href="index.html">
+        <img src="https://yuc-se.gumlet.net/wp-content/uploads/logga_stor_gul.svg" alt="Yuc yellow logo"></a>
+</header>
+
+<main class="flex-container4">
+
 
 <h2>Boka ett bord</h2>
 
 <form action="/action_page.php">
-  <label for="fname">Förnamn:</label><br>
-  <input type="text" id="fname" name="fname" placeholder="Ange förnamn"><br></br>
+  <label for="fname">Förnamn:</label>
+  <input type="text" id="fname" name="fname" placeholder="Ange förnamn">
   <label for="lname">Efternamn:</label><br>
-  <input type="text" id="lname" name="lname" placeholder="Ange efternamn"><br><br>
+  <input type="text" id="lname" name="lname" placeholder="Ange efternamn">
   <label for="lname">Telefonnummer:</label><br>
-  <input type="text" id="tel" name="tel" placeholder="Ange telefonnummer"><br><br>
+  <input type="text" id="tel" name="tel" placeholder="Ange telefonnummer">
   <label for="email">E-post:</label><br>
-  <input type="text" id="email" name="email" placeholder="Ange e-post"><br><br>
+  <input type="text" id="email" name="email" placeholder="Ange e-post">
 </form> 
 
 
@@ -40,24 +49,54 @@
 <option value="8">8</option>
 <option>9+ (Ange i kommentarsfältet)</option>
 </select>
-<br></br>
+
 </div>
 
 <p>Ange datum och tid som reservationen avser:</p>
-<input type="datetime-local" id="meeting-time"> <br></br>
+<input type="datetime-local" id="meeting-time">
 
 
-<p>Har du någon speciella önskemål eller vill ange extra information till oss? Skriv då i rutan nedan.:</p>
-<textarea name="message" placeholder="Your message" rows="4" cols="50"></textarea>
-<br></br>
+<p>Har du någon speciella önskemål eller vill ange extra information till oss? 
+  Skriv då i rutan nedan.:</p>
+<!-- <textarea name="message" placeholder="Your message" rows="4" cols="50"></textarea> -->
+<textarea>Skriv meddelande här</textarea>
 
-<script>
-function myFunction() {
-  confirm("Din bokning är nu genomförd och en bekräftelse skickas till din mail.");
-}
 
-</script>
+<button onclick="myFunction()">Boka</button>
+
+
+</main>
+
+<footer class=flex-container3>
+           
+  <section>
+      <h3>Kontakt</h3>
+      <p>Adress: Norrtullsgatan 15
+          113 29 Stockholm
+
+          Telefon: 08-30 00 81
+
+          Mail:
+          <a href="mailto:info@yuc.se">info@yuc.se</a>
+      </p>
+
+      <h3>Öppettider</h3>
+      <p>tisdag - söndag 17:00 - sent</p>
+  </section>
+
+</footer>
 
 </body>
+
 </html>
 
+<script>
+  function myFunction() {
+    var txt;
+    var r = confirm("Din bokning är nu genomförd och en bekräftelse har skickats till din mail. Klicka på OK för att gå tillbaka till start.");
+    if (r == true) {
+      location.replace("index.html")
+    }   
+  }
+  
+  </script>

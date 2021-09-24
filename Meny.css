@@ -1,20 +1,4 @@
-.meny-img {
-    width: 100%;
-    height: 50%;
-    text-align: center;
- }
- 
- div {
-    text-align: center;
- }
-
- .bgimg{
-    background-image: url("Meny.svg");
-    background-color: #cccccc;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: contain;
-    width: 100%;
-    height: 50%;
-    text-align: center;
- }
+img {
+   width: 100%;
+   height: auto;
+}

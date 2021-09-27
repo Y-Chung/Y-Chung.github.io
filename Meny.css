@@ -1,4 +1,22 @@
+
+body {
+   background-image: url(https://yuc-se.gumlet.net/wp-content/uploads/dsc00009.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-color: #f0669e;
+}
+
+.flex-container5 {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
 img {
-   width: 100%;
-   height: auto;
+   display: flexbox;
 }

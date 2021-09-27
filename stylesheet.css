@@ -4,7 +4,7 @@
 
  .hero-image {
    background-image: url("https://yuc-se.gumlet.net/wp-content/uploads/dsc06551.jpg"); /* The image used */
-   background-color:teal; /* Used if the image is unavailable */
+   background-color:#F0669E; /* Used if the image is unavailable */
    height: auto; /* You must set a specified height */
    background-position: center; /* Center the image */
    background-repeat: no-repeat; /* Do not repeat the image */
@@ -13,17 +13,31 @@
 
  .hero-image2 {
    background-image: url("https://yuc-se.gumlet.net/wp-content/uploads/dsc06570.jpg"); /* The image used */
-   background-color:teal; /* Used if the image is unavailable */
+   background-color:#F0669E; /* Used if the image is unavailable */
    background-position: center; /* Center the image */
    background-repeat: no-repeat; /* Do not repeat the image */
    background-size: cover; /* Resize the background image to cover the entire container */
  }
 
+ .hero-image3 {
+  background-image: url("https://yuc-se.gumlet.net/wp-content/uploads/dsc00009.jpg");
+  background-color:#F0669E; /* Used if the image is unavailable */
+   height: auto; /* You must set a specified height */
+   background-position: center; /* Center the image */
+   background-repeat: no-repeat; /* Do not repeat the image */
+   background-size: cover; /* Resize the background image to cover the entire container */
+ }
+
+ img {
+  display: flexbox;
+  width: 60%;
+}
+
  body {
    margin: 0%;
 }
  
-img {
+.logo {
    width: 15vh;
 }
  
@@ -63,10 +77,10 @@ img {
    background-color: #F3F3F3;
    padding: 0.5em;
    text-align: center;
-   margin-top: 15vh;
    align-items: center;
    justify-content: center;
    width: 100%;
+   margin-top: 10vh;
  }
 
   /* boka bord-formulär */
@@ -78,6 +92,17 @@ img {
   border-radius: 11px;
   justify-content: space-between;
 } 
+
+/* meny */
+.flex-container5 {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
 
  textarea {
    width: 100%;
@@ -132,6 +157,10 @@ p {
 a {
 color: black;
 }
+
+.knapp {
+  text-decoration: none;
+}
  
 .buttonMeny {
    background-color: black;
@@ -140,7 +169,6 @@ color: black;
    color: white;
    padding: 20px;
    text-align: center;
-   text-decoration: none;
    font-size: 1em;
    margin: 1em;
    cursor: pointer;
@@ -159,7 +187,6 @@ color: black;
    color: white;
    padding: 20px;
    text-align: center;
-   text-decoration: none;
    font-size: 1em;
    margin: auto;
    cursor: pointer;
